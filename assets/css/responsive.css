@@ -1,0 +1,146 @@
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .contentSearch {
+        margin-bottom: 16px;
+        height: auto;
+
+    }
+
+    .contentSearch>h1 {
+        font-size: 24px;
+    }
+
+    .contentSearch>.boxText {
+        width: 100%;
+    }
+
+    .contentSearch>.specialty li {
+        width: 100%;
+    }
+
+    .contentCard {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contentListSpecialty {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contentListSpecialty>div {
+        width: 100%;
+    }
+
+    .contentCard>div {
+        width: 100%;
+    }
+
+    .detailSpeciality>p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 596px) {
+    .contentSearch {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .contentSearch>.boxText {
+        width: 100%;
+    }
+
+    .contentSearch>.specialty li {
+        width: 100%;
+    }
+
+    .contentCard {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contentListSpecialty {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contentListSpecialty>div {
+        width: 100%;
+    }
+
+    .contentCard>div {
+        width: 100%;
+    }
+
+    .detailSpeciality>p {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .contentListSpecialty .menuPagination {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .contentSearch>.boxText {
+        width: 50%;
+    }
+
+    .contentCard {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentCard>div {
+        width: 100%;
+    }
+
+    .contentListSpecialty {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentListSpecialty>div {
+        width: 100%;
+    }
+
+    .detailSpeciality>p {
+        text-align: justify;
+    }
+
+    .contentListSpecialty .menuPagination {
+        grid-column: span 2;
+    }
+}
+
+/* Laptops y Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .contentListSpecialty .menuPagination {
+        grid-column: span 3;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1281px) {
+    .contentListSpecialty .menuPagination {
+        grid-column: span 3;
+    }
+}

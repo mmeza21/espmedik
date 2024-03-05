@@ -1,0 +1,152 @@
+main {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.contentSearch {
+    height: 120px;
+    margin-top: 16px;
+}
+
+.contentSearch>h1 {
+    margin-bottom: 16px;
+}
+
+/* Contenido de card */
+.contentCard {
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+/* Card */
+.contentCard>div {
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px 4px rgba(0, 0, 0, 0.10);
+    /*width: calc(1024px / 3 - 16px);*/
+    /*height: calc(1024px / 6 - 16px);*/
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    color: var(--primaryColor);
+    font-weight: 700;
+    cursor: pointer;
+}
+/**/
+.contentListSpecialty{
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.contentListSpecialty>div{
+    border-radius: 12px;
+    height: 120px;
+    box-shadow: 0px 8px 24px 4px rgba(0, 0, 0, 0.10);
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primaryColor);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Tamaño de imagen en la card */
+.contentListSpecialty div > img{
+    width: 64px;
+    height: 64px;
+}
+
+/* Lista de especialidades al deplegar texto predictivo */
+.specialty {
+    list-style: none;
+
+}
+
+.specialty li {
+    background: var(--secondaryBackground);
+    width: calc(100% / 3 - 32px);
+    padding: 4px 16px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.specialty li:hover {
+    background: var(--secondaryBackground);
+}
+
+.specialty li:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.specialty li:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Detalle de especialización */
+.detailSpeciality>img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 64px;
+    height: 64px;
+}
+
+.detailSpeciality>h2 {
+    margin-bottom: 16px;
+}
+
+/* Menú de navegación */
+.menuPagination {
+    margin-top: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/* Contenedor de botón de paginación */
+.pageItem {
+    list-style: none;
+    margin-left: 8px;
+}
+
+/* Estilo de botón de pagina */
+.pageLink:not(.pageLinkMove) {
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 900;
+}
+/* Estilo botón de navegación (Antes y despues) */
+.pageLinkMove{
+    color: var(--primaryColor);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 900; 
+}
+/* Ocultar border de paginación anterior y siguente */
+
+
+/* Color activo */
+.pagination .pageItem.active .pageLink {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+}

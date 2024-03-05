@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    --primaryColor:#4A1162;
+    --secondaryColor:#ED6A00;
+    --whiteColor: #FFFFFF;
+    --alertColor:#FFCE00;
+    --primaryBackground:#FFFFFF;
+    --secondaryBackground:#F8F8F8;
+    --placeholderColor:#ADADAD;
+}   
+
+h1 {
+    color: var(--primaryColor);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 125%;
+}
+
+h2 {
+    color: var(--primaryColor);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+}
+h3 {
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+}
+p {
+    color: var(--primaryColor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.boxText {
+    background: URL(../img/search.png) no-repeat 95% var(--secondaryBackground);
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 12px;
+    width: calc(100% / 3 - 32px);
+    height: 42px;
+    padding: 9px 21px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.boxText::placeholder{
+    font-weight: 300;
+    color: var(--placeholderColor);
+}
+.buttonPrimary{
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border-radius: 16px;
+    border:none;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
